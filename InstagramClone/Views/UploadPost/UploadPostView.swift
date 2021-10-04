@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  UploadPostView.swift
 //  InstagramClone
 //
 //  Created by David Malicke on 10/4/21.
@@ -7,14 +7,14 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct UploadPostView: View {
     var body: some View {
-        MainView()
+        Text("UploadPostView")
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct UploadPostView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        UploadPostView()
     }
 }
