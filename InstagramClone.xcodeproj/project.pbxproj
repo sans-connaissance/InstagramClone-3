@@ -25,6 +25,7 @@
 		4182CC94270B6DA200EEBD15 /* UploadPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4182CC93270B6DA200EEBD15 /* UploadPostView.swift */; };
 		4182CC96270B6E5200EEBD15 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4182CC95270B6E5200EEBD15 /* ContentView.swift */; };
 		4182CC98270B71A600EEBD15 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4182CC97270B71A600EEBD15 /* FeedCell.swift */; };
+		418CB9E2270BC01800CBD487 /* PostGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418CB9E1270BC01800CBD487 /* PostGridView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		4182CC93270B6DA200EEBD15 /* UploadPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPostView.swift; sourceTree = "<group>"; };
 		4182CC95270B6E5200EEBD15 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4182CC97270B71A600EEBD15 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		418CB9E1270BC01800CBD487 /* PostGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostGridView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 		4182CC70270B69BD00EEBD15 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				418CB9E0270BC00900CBD487 /* Items */,
 				4182CC92270B6D8900EEBD15 /* UploadPost */,
 				4182CC87270B6CC500EEBD15 /* Profile */,
 				4182CC86270B6CBD00EEBD15 /* Notifications */,
@@ -188,6 +191,14 @@
 				4182CC93270B6DA200EEBD15 /* UploadPostView.swift */,
 			);
 			path = UploadPost;
+			sourceTree = "<group>";
+		};
+		418CB9E0270BC00900CBD487 /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				418CB9E1270BC01800CBD487 /* PostGridView.swift */,
+			);
+			path = Items;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,6 +292,7 @@
 				4182CC94270B6DA200EEBD15 /* UploadPostView.swift in Sources */,
 				4182CC8F270B6D0100EEBD15 /* FeedView.swift in Sources */,
 				4182CC8B270B6CEE00EEBD15 /* NotificationsView.swift in Sources */,
+				418CB9E2270BC01800CBD487 /* PostGridView.swift in Sources */,
 				4182CC98270B71A600EEBD15 /* FeedCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
