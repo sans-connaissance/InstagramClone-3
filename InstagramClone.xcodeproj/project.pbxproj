@@ -24,6 +24,7 @@
 		4182CC91270B6D0900EEBD15 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4182CC90270B6D0900EEBD15 /* MainView.swift */; };
 		4182CC94270B6DA200EEBD15 /* UploadPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4182CC93270B6DA200EEBD15 /* UploadPostView.swift */; };
 		4182CC96270B6E5200EEBD15 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4182CC95270B6E5200EEBD15 /* ContentView.swift */; };
+		4182CC98270B71A600EEBD15 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4182CC97270B71A600EEBD15 /* FeedCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		4182CC90270B6D0900EEBD15 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		4182CC93270B6DA200EEBD15 /* UploadPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPostView.swift; sourceTree = "<group>"; };
 		4182CC95270B6E5200EEBD15 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4182CC97270B71A600EEBD15 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				4182CC8E270B6D0100EEBD15 /* FeedView.swift */,
+				4182CC97270B71A600EEBD15 /* FeedCell.swift */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 				4182CC94270B6DA200EEBD15 /* UploadPostView.swift in Sources */,
 				4182CC8F270B6D0100EEBD15 /* FeedView.swift in Sources */,
 				4182CC8B270B6CEE00EEBD15 /* NotificationsView.swift in Sources */,
+				4182CC98270B71A600EEBD15 /* FeedCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
