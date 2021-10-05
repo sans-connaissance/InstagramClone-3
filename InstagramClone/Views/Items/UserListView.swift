@@ -13,6 +13,7 @@ struct UserListView: View {
             LazyVStack {
                 ForEach(0..<10) { user in
                     UserCell()
+                        .padding(.leading, 8)
                     
                 }
             }
