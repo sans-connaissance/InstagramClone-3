@@ -18,9 +18,9 @@ struct NotificationCell: View {
             
             Text("tedmosby")
                 .font(.system(size: 14, weight: .semibold)) +
-            Text("has followed you.")
+            Text(" has followed you.")
                 .font(.system(size: 15)) +
-            Text("2H")
+            Text(" 2H")
                 .foregroundColor(.gray)
                 .font(.system(size: 12))
             
@@ -33,6 +33,7 @@ struct NotificationCell: View {
                     .font(.system(size: 14, weight: .semibold))
                     .frame(width: 100, height: 32)
                     .foregroundColor(.white)
+                    .background(Color.blue)
                     .cornerRadius(3)
                     .overlay(
                     RoundedRectangle(cornerRadius: 3)
@@ -45,6 +46,7 @@ struct NotificationCell: View {
             
             
         }
+        .padding(.horizontal)
     }
 }
 
