@@ -20,11 +20,8 @@ struct ProfileHeaderView: View {
                 
                 Spacer()
                 
-                VStack {
-                    Text("210K")
-                        .font(.system(size: 15, weight: .semibold))
-                    Text("Followers")
-                        .font(.system(size: 15))
+                HStack {
+
                 }
             }
         }
