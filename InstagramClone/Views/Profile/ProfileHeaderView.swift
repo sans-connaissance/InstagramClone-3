@@ -20,9 +20,12 @@ struct ProfileHeaderView: View {
                 
                 Spacer()
                 
-                HStack {
+                HStack(spacing: 16) {
+                    UserStats(value: 10, title: "Posts")
+                    UserStats(value: 10, title: "Followers")
+                    UserStats(value: 10, title: "Following")
 
-                }
+                }.padding(.trailing)
             }
         }
     }

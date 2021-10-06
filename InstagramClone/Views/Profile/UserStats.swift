@@ -13,10 +13,13 @@ struct UserStats: View {
     let title: String
     
     var body: some View {
-        Text("\(value)")
-            .font(.system(size: 15, weight: .semibold))
-        Text(title)
-            .font(.system(size: 15))
+        VStack {
+            Text("\(value)")
+                .font(.system(size: 15, weight: .semibold))
+            Text(title)
+                .font(.system(size: 15))
+        }
+        .frame(width: 80, alignment: .center)
     }
 }
 
