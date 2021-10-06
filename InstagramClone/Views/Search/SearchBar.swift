@@ -20,7 +20,7 @@ struct SearchBar: View {
                 .background(Color(.systemGray6))
                 .overlay(
                     HStack {
-                        Image(systemName: "magnifiyingglass")
+                        Image(systemName: "magnifyingglass")
                             .foregroundColor(.gray)
                             .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
                     }
