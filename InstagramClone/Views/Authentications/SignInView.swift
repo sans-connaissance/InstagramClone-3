@@ -9,7 +9,15 @@ import SwiftUI
 
 struct SignInView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack {
+            Spacer()
+            Text("Forgot Password")
+                .font(.system(size: 13, weight: .semibold))
+                .foregroundColor(.gray)
+                .padding(.top)
+                .padding(.trailing, 28)
+            
+        }
     }
 }
 

@@ -10,6 +10,8 @@ import SwiftUI
 struct RegisterView: View {
     
     @State var email = ""
+    @State var username = ""
+    @State var fullname = ""
     @State var password = ""
     
     
@@ -28,19 +30,19 @@ struct RegisterView: View {
                         .padding()
                         .padding(.horizontal, 32)
                     
+                    CustomTextField(text: $username, placeholder: Text("Username"), imageName: "person")
+                        .padding()
+                        .padding(.horizontal, 32)
+                    
+                    CustomTextField(text: $email, placeholder: Text("Full Name"), imageName: "pencil")
+                        .padding()
+                        .padding(.horizontal, 32)
+                    
                     CustomSecureField(text: $password, placeholder: Text("Password"), imageName: "lock")
                         .padding()
                         .padding(.horizontal, 32)
                     
-                    HStack {
-                        Spacer()
-                        Text("Forgot Password")
-                            .font(.system(size: 13, weight: .semibold))
-                            .foregroundColor(.gray)
-                            .padding(.top)
-                            .padding(.trailing, 28)
-                        
-                    }
+                    
                 }
                 
                 
