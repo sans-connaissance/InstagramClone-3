@@ -1,14 +1,13 @@
 //
-//  CustomTextField.swift
+//  CustomSecureField.swift
 //  InstagramClone
 //
-//  Created by David Malicke on 10/5/21.
+//  Created by David Malicke on 10/7/21.
 //
 
 import SwiftUI
 
-struct CustomTextField: View {
-    
+struct CustomSecureField: View {
     @Binding var text: String
     let placeholder: Text
     let imageName: String
@@ -28,7 +27,7 @@ struct CustomTextField: View {
                     .frame(width: 20, height: 20)
                     .foregroundColor(.white)
                 
-                TextField("", text: $text)
+                SecureField("", text: $text)
                 
             }
             
@@ -37,11 +36,4 @@ struct CustomTextField: View {
     }
 }
 
-struct CustomTextField_Previews: PreviewProvider {
-    
-    @State static var text = "test"
-    
-    static var previews: some View {
-        CustomTextField(text: $text, placeholder: Text("test"), imageName: "arrow")
-    }
-}
+

@@ -22,7 +22,17 @@ struct RegisterView: View {
                 .frame(width: 220, height: 180)
                 .foregroundColor(.black)
             
-            TextField("Email", text: $email )
+            CustomTextField(text: $email, placeholder: Text("Email"), imageName: "envelope")
+                .padding()
+                .cornerRadius(10)
+                .foregroundColor(.gray)
+                .padding(.horizontal, 32)
+            
+            CustomSecureField(text: $password, placeholder: Text("Email"), imageName: "envelope")
+                .padding()
+                .cornerRadius(10)
+                .foregroundColor(.gray)
+                .padding(.horizontal, 32)
         }
     }
 }
