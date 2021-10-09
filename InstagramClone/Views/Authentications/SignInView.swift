@@ -9,7 +9,9 @@ import SwiftUI
 
 struct SignInView: View {
     
-    @State var username = ""
+    //the demo uses .navigationBarHidden(true) on each navigation link in order to hide nested NavigationViews. I don't think this is correct. Should be refactored later, and I'm not going to implement it here.
+    
+    @State var email = ""
     @State var password = ""
     
     var body: some View {
@@ -24,7 +26,7 @@ struct SignInView: View {
                     .foregroundColor(.black)
                 VStack(spacing: -16) {
                     
-                    CustomTextField(text: $username, placeholder: Text("Username"), imageName: "person")
+                    CustomTextField(text: $email, placeholder: Text("Email"), imageName: "person")
                         .padding()
                         .padding(.horizontal, 32)
                     
@@ -35,12 +37,16 @@ struct SignInView: View {
                     
                     HStack {
                         Spacer()
-                        Text("Forgot Password")
-                            .font(.system(size: 13, weight: .semibold))
-                            .foregroundColor(.gray)
-                            .padding(.top)
-                            .padding(.trailing, 28)
-                        
+                        NavigationLink {
+                            ForgotPasswordView(email: $email)
+                        } label: {
+                            Text("Forgot Password")
+                                .font(.system(size: 13, weight: .semibold))
+                                .foregroundColor(.gray)
+                                .padding(.top)
+                                .padding(.trailing, 28)
+                        }
+
                     }
                     
                     
