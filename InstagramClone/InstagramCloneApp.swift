@@ -13,6 +13,7 @@ struct InstagramCloneApp: App {
     
     init() {
         FirebaseApp.configure()
+
         
         
         

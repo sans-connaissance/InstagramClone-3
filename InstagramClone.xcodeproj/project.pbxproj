@@ -21,6 +21,7 @@
 		4180392D270FD29100A45C4E /* CustomSecureField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4180392C270FD29100A45C4E /* CustomSecureField.swift */; };
 		4180392F2711CF4C00A45C4E /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4180392E2711CF4C00A45C4E /* ForgotPasswordView.swift */; };
 		41803931271322C900A45C4E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 41803930271322C900A45C4E /* GoogleService-Info.plist */; };
+		4180393A271328FB00A45C4E /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41803939271328FB00A45C4E /* AuthViewModel.swift */; };
 		4182CC60270B68F300EEBD15 /* InstagramCloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4182CC5F270B68F300EEBD15 /* InstagramCloneApp.swift */; };
 		4182CC64270B68F500EEBD15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4182CC63270B68F500EEBD15 /* Assets.xcassets */; };
 		4182CC67270B68F500EEBD15 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4182CC66270B68F500EEBD15 /* Preview Assets.xcassets */; };
@@ -58,6 +59,7 @@
 		4180392C270FD29100A45C4E /* CustomSecureField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSecureField.swift; sourceTree = "<group>"; };
 		4180392E2711CF4C00A45C4E /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
 		41803930271322C900A45C4E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		41803939271328FB00A45C4E /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		4182CC5C270B68F300EEBD15 /* InstagramClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4182CC5F270B68F300EEBD15 /* InstagramCloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramCloneApp.swift; sourceTree = "<group>"; };
 		4182CC63270B68F500EEBD15 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -100,6 +102,42 @@
 				4180392E2711CF4C00A45C4E /* ForgotPasswordView.swift */,
 			);
 			path = Authentications;
+			sourceTree = "<group>";
+		};
+		418039322713289D00A45C4E /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				41803939271328FB00A45C4E /* AuthViewModel.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		41803933271328A800A45C4E /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		41803934271328AB00A45C4E /* Search */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		41803935271328B600A45C4E /* Upload */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Upload;
+			sourceTree = "<group>";
+		};
+		41803936271328BB00A45C4E /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 		4182CC53270B68F300EEBD15 = {
@@ -153,6 +191,11 @@
 		4182CC6E270B698100EEBD15 /* View Models */ = {
 			isa = PBXGroup;
 			children = (
+				41803936271328BB00A45C4E /* Profile */,
+				41803935271328B600A45C4E /* Upload */,
+				41803934271328AB00A45C4E /* Search */,
+				41803933271328A800A45C4E /* Feed */,
+				418039322713289D00A45C4E /* Authentication */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -358,6 +401,7 @@
 				412F919B270D522C00C5AAC8 /* SignInView.swift in Sources */,
 				412F9194270D449000C5AAC8 /* ProfileHeaderView.swift in Sources */,
 				4182CC98270B71A600EEBD15 /* FeedCell.swift in Sources */,
+				4180393A271328FB00A45C4E /* AuthViewModel.swift in Sources */,
 				4180392D270FD29100A45C4E /* CustomSecureField.swift in Sources */,
 				4136BCC3270D23390078EFF8 /* ImagePicker.swift in Sources */,
 				4155FA1E270BE1A10097C3F1 /* NotificationCell.swift in Sources */,
