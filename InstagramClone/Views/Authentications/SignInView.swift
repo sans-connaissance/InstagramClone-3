@@ -11,6 +11,9 @@ struct SignInView: View {
     
     //the demo uses .navigationBarHidden(true) on each navigation link in order to hide nested NavigationViews. I don't think this is correct. Should be refactored later, and I'm not going to implement it here.
     
+    
+    @EnvironmentObject var authViewModel: AuthViewModel
+    
     @State var email = ""
     @State var password = ""
     
