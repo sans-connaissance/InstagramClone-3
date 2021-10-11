@@ -50,7 +50,7 @@ struct RegisterView: View {
                 
                 
                 Button {
-                    authViewModel.register(withEmail: email, password: password)
+                    authViewModel.register(withEmail: email, password: password, username: username, fullname: fullname)
                     
                 } label: {
                     Text("Register")
