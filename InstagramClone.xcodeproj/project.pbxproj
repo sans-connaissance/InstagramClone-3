@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		410BA49D27151AFA0028E483 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410BA49C27151AFA0028E483 /* User.swift */; };
 		412F9192270D3ADC00C5AAC8 /* TextArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412F9191270D3ADC00C5AAC8 /* TextArea.swift */; };
 		412F9194270D449000C5AAC8 /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412F9193270D449000C5AAC8 /* ProfileHeaderView.swift */; };
 		412F9196270D46DC00C5AAC8 /* UserStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412F9195270D46DC00C5AAC8 /* UserStats.swift */; };
@@ -45,6 +46,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		410BA49C27151AFA0028E483 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		412F9191270D3ADC00C5AAC8 /* TextArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextArea.swift; sourceTree = "<group>"; };
 		412F9193270D449000C5AAC8 /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
 		412F9195270D46DC00C5AAC8 /* UserStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStats.swift; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 		4182CC6D270B697500EEBD15 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				410BA49C27151AFA0028E483 /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -381,6 +384,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				410BA49D27151AFA0028E483 /* User.swift in Sources */,
 				4182CC8D270B6CF800EEBD15 /* SearchView.swift in Sources */,
 				412F9199270D521E00C5AAC8 /* RegisterView.swift in Sources */,
 				4182CC91270B6D0900EEBD15 /* MainView.swift in Sources */,
