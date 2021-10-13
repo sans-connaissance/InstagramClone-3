@@ -24,9 +24,14 @@ struct ProfileHeaderView: View {
                     UserStats(value: 10, title: "Posts")
                     UserStats(value: 10, title: "Followers")
                     UserStats(value: 10, title: "Following")
-
+                    
                 }.padding(.trailing)
+                
             }
+            
+            Text(AuthViewModel.shared.currentUser?.fullname ?? "Oops")
+                .font(.system(size: 15, weight: .bold))
+                .padding([.leading, .top])
         }
     }
 }

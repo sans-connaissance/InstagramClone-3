@@ -12,12 +12,14 @@ import CoreMedia
 class AuthViewModel: ObservableObject {
     
     @Published var userSession: Firebase.User?
+    @Published var currentUser: User?
     
     static let shared = AuthViewModel()
     
     //allows people to stay signed in
     init() {
         userSession = Auth.auth().currentUser
+        fetchUser()
         
     }
     
@@ -31,6 +33,7 @@ class AuthViewModel: ObservableObject {
             guard let user = result?.user else { return }
             
             self.userSession = user
+            self.fetchUser()
         }
         
     }
@@ -56,7 +59,8 @@ class AuthViewModel: ObservableObject {
                     print(error.localizedDescription)
                     return
                 }
-                
+                self.userSession = user
+                self.fetchUser()
                 print("DEBUG: USER CREATED" )
             }
             
@@ -70,6 +74,20 @@ class AuthViewModel: ObservableObject {
         
         try? Auth.auth().signOut()
         
+    }
+    
+    func fetchUser() {
+        
+        guard let uid = userSession?.uid else { return }
+        
+        Firestore.firestore().collection("users").document(uid).getDocument { (snap, error) in
+            if let error = error {
+                print(error.localizedDescription)
+                return
+            }
+            guard let user = try? snap?.data(as: User.self) else { return }
+            self.currentUser = user
+        }
         
     }
 }
