@@ -35,8 +35,17 @@ class ProfileViewModel: ObservableObject {
                     print(error.localizedDescription)
                     return
                 }
-                
+                //downloads previously uploaded image into profileimage for user
                 guard let imageURL = url?.absoluteString else { return }
+                
+                guard let uid = self.user.id else {return}
+                
+                Firestore.firestore().collection("users").document(uid).updateData(["profileImageURL": imageURL]) { error in
+                    if let error = error {
+                        print(error.localizedDescription)
+                        return
+                    }
+                }
             }
         }
     }
