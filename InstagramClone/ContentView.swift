@@ -17,12 +17,14 @@ struct ContentView: View {
             if authViewModel.userSession == nil {
                 SignInView()
             } else {
-                MainView(selectedIndex: $selectedIndex)
+                if let user = authViewModel.currentUser {
+                    MainView(user: user, selectedIndex: $selectedIndex)
+                }
             }
-            
         }
     }
 }
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
