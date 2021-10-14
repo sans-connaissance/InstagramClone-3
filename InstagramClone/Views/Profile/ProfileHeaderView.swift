@@ -73,7 +73,9 @@ struct ProfileHeaderView: View {
 extension ProfileHeaderView {
     func loadImage() {
         guard let selectedImage = selectedImage else { return }
-        userImage = Image(uiImage: selectedImage)
+        viewModel.changeProfileImage(image: selectedImage) { (_) in
+            print("DEBUG: Uploaded Image")
+        }
     }
     
 }
