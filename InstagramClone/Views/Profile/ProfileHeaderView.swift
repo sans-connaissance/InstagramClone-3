@@ -6,18 +6,50 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct ProfileHeaderView: View {
+    
+    @State var selectedImage: UIImage?
+    @State var userImage: Image?
+    @State var imagePickerRepresented = false
+    
     var body: some View {
         VStack(alignment: .leading) {
             HStack {
-                Image("ted")
-                    .resizable()
-                    .scaledToFill()
-                    .frame(width: 80, height: 80)
-                    .clipShape(Circle())
-                    .padding(.leading, 16)
                 
+                ZStack {
+                    if let imageURL = AuthViewModel.shared.currentUser?.profileImageURL {
+                        KFImage(URL(string: imageURL))
+                            .resizable()
+                            .scaledToFill()
+                            .frame(width: 80, height: 80)
+                            .clipShape(Circle())
+                            .padding(.leading, 16)
+                    }
+                    else {
+                        
+                        Button {
+                            self.imagePickerRepresented = true
+                        } label: {
+                            Image("profile-placeholder")
+                                .resizable()
+                                .scaledToFill()
+                                .frame(width: 80, height: 80)
+                                .clipShape(Circle())
+                                .padding(.leading, 16)
+                        }.sheet(isPresented: $imagePickerRepresented) {
+                            //onDismiss
+                            loadImage()
+                        } content: {
+                            ImagePicker(image: $selectedImage)
+                        }
+
+
+
+                    }
+                }
+
                 Spacer()
                 
                 HStack(spacing: 16) {
@@ -40,4 +72,13 @@ struct ProfileHeaderView_Previews: PreviewProvider {
     static var previews: some View {
         ProfileHeaderView()
     }
+}
+
+
+extension ProfileHeaderView {
+    func loadImage() {
+        guard let selectedImage = selectedImage else { return }
+        userImage = Image(uiImage: selectedImage)
+    }
+    
 }
