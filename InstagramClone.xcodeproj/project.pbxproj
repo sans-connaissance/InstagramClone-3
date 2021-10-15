@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		410BA49D27151AFA0028E483 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410BA49C27151AFA0028E483 /* User.swift */; };
 		412E0B2D27189E0B0079B536 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412E0B2C27189E0B0079B536 /* ProfileViewModel.swift */; };
+		412E0B2F271900630079B536 /* ProfileButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412E0B2E271900630079B536 /* ProfileButtonView.swift */; };
 		412F9192270D3ADC00C5AAC8 /* TextArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412F9191270D3ADC00C5AAC8 /* TextArea.swift */; };
 		412F9194270D449000C5AAC8 /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412F9193270D449000C5AAC8 /* ProfileHeaderView.swift */; };
 		412F9196270D46DC00C5AAC8 /* UserStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412F9195270D46DC00C5AAC8 /* UserStats.swift */; };
@@ -49,6 +50,7 @@
 /* Begin PBXFileReference section */
 		410BA49C27151AFA0028E483 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		412E0B2C27189E0B0079B536 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		412E0B2E271900630079B536 /* ProfileButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileButtonView.swift; sourceTree = "<group>"; };
 		412F9191270D3ADC00C5AAC8 /* TextArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextArea.swift; sourceTree = "<group>"; };
 		412F9193270D449000C5AAC8 /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
 		412F9195270D46DC00C5AAC8 /* UserStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStats.swift; sourceTree = "<group>"; };
@@ -280,6 +282,7 @@
 				4182CC88270B6CE100EEBD15 /* ProfileView.swift */,
 				412F9193270D449000C5AAC8 /* ProfileHeaderView.swift */,
 				412F9195270D46DC00C5AAC8 /* UserStats.swift */,
+				412E0B2E271900630079B536 /* ProfileButtonView.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -409,6 +412,7 @@
 				412F919B270D522C00C5AAC8 /* SignInView.swift in Sources */,
 				412F9194270D449000C5AAC8 /* ProfileHeaderView.swift in Sources */,
 				4182CC98270B71A600EEBD15 /* FeedCell.swift in Sources */,
+				412E0B2F271900630079B536 /* ProfileButtonView.swift in Sources */,
 				4180393A271328FB00A45C4E /* AuthViewModel.swift in Sources */,
 				4180392D270FD29100A45C4E /* CustomSecureField.swift in Sources */,
 				4136BCC3270D23390078EFF8 /* ImagePicker.swift in Sources */,

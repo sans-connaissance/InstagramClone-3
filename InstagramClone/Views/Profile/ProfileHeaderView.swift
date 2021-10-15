@@ -31,7 +31,7 @@ struct ProfileHeaderView: View {
                     else {
                         
                         Button {
-                       
+                            
                             self.imagePickerRepresented.toggle()
                         } label: {
                             userImage?
@@ -43,10 +43,10 @@ struct ProfileHeaderView: View {
                         }.sheet(isPresented: $imagePickerRepresented, onDismiss: loadImage, content: {
                             ImagePicker(image: $selectedImage)
                         })
-
+                        
                     }
                 }
-
+                
                 Spacer()
                 
                 HStack(spacing: 16) {
@@ -62,13 +62,18 @@ struct ProfileHeaderView: View {
                 .font(.system(size: 15, weight: .bold))
                 .padding([.leading])
             
+            HStack{
+                Spacer()
+                ProfileButtonView(profileViewModel: viewModel)
+                Spacer()
+            }.padding(.top)
         }
     }
 }
 
 
 
-
+// MARK: shouldn't this be in the ProfileViewModel
 extension ProfileHeaderView {
     func loadImage() {
         guard let selectedImage = selectedImage else { return }
